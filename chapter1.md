@@ -2080,7 +2080,7 @@ What is the best reason to use a model to find causality instead of a randomized
 - I already tried an experiment that did not give me the expected result, so I want to try modeling instead.
 - My treatment happened in the past, so I can't create a new experiment to test it in the future.
 - A control group doesn't make sense with my topic, so I will use modeling instead.
-- Creating a control and treatment group would require me to do something immoral and possibly illegal.
+- [Creating a control and treatment group would require me to do something immoral and possibly illegal.]
 
 
 `@feedback`
