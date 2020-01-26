@@ -11,7 +11,7 @@ key: 812b575a73
 lang: r
 xp: 50 
 skills: 1 
-video_link: //player.vimeo.com/video/231746347
+video_link://player.vimeo.com/video/231746347
 ```
 
 ---
@@ -22,5 +22,7 @@ key: 09bccc78e5
 lang: r
 xp: 50 
 skills: 1 
-video_link: //player.vimeo.com/video/231746571
+video_link://player.vimeo.com/video/231746571
 ```
+
+
