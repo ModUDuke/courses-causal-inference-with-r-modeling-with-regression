@@ -12,7 +12,6 @@ key:812b575a73
 lang:r
 xp:50 
 skills:1 
-
 video_link: //player.vimeo.com/video/231746347
 ```
 
@@ -24,7 +23,6 @@ key:09bccc78e5
 lang:r
 xp:50 
 skills:1 
-
 video_link: //player.vimeo.com/video/231746571
 ```
 
@@ -80,7 +78,6 @@ key:
 lang:r
 xp:50 
 skills:1 
-
 video_link: //player.vimeo.com/video/379871879
 ```
 
@@ -592,7 +589,6 @@ key:
 lang:r
 xp:50 
 skills:1 
-
 video_link: //player.vimeo.com/video/379871871
 ```
 
@@ -1191,7 +1187,6 @@ key:059e8eb292
 lang:r
 xp:50 
 skills:1 
-
 video_link: //player.vimeo.com/video/231746457
 ```
 
@@ -1230,7 +1225,6 @@ key:4608217f1d
 lang:r
 xp:50 
 skills:1 
-
 video_link: //player.vimeo.com/video/231746698
 ```
 
@@ -1280,7 +1274,6 @@ key:0dd082cdd9
 lang:r
 xp:50 
 skills:1 
-
 video_link: //player.vimeo.com/video/231746940
 ```
 
@@ -1318,7 +1311,6 @@ key:
 lang:r
 xp:50 
 skills:1 
-
 video_link: //player.vimeo.com/video/379871855
 ```
 
@@ -2057,7 +2049,6 @@ key:4c6f64e320
 lang:r
 xp:50 
 skills:1 
-
 video_link: //player.vimeo.com/video/231747210
 ```
 
@@ -2089,6 +2080,7 @@ What is the best reason to use a model to find causality instead of a randomized
 - In order to find a causal effect, you need to have a control group and a treatment group, whether it's in an experiment or another method. If you can't create both groups, then whatever you are modeling will not be for causal inference. Try again
 - Correct. This is a great reason not to do something, no matter what it is! Like we mentioned in our videos, sometimes you just can't run an experiment if it involves harming others or destroying something valuable, so we need to look to creating really good models instead.
 
+
 --- 
 ## Modeling the Impact of Government Stimulus
 
@@ -2098,7 +2090,6 @@ key:cc7e8a6309
 lang:r
 xp:50 
 skills:1 
-
 video_link: //player.vimeo.com/video/231746794
 ```
 
@@ -2136,7 +2127,6 @@ key:
 lang:r
 xp:50 
 skills:1 
-
 video_link: //player.vimeo.com/video/379871850
 ```
 
