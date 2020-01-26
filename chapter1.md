@@ -4,13 +4,4 @@ description : 'This brief course will introduce you to modeling for causal infer
 free_preview: true
 ---
 
-## The Basics of Modeling Behavior
-```yaml
-type:VideoExercise 
-key:812b575a73
-lang:r
-xp:50 
-skills:1 
-video_link: //player.vimeo.com/video/231746347
-```
-  
+
