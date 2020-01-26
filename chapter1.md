@@ -72,13 +72,12 @@ D) Learning the effect of the income tax on whether people participate in the la
 --- 
 ## Let's Code: Kids Love Ice Cream
 ```yaml
-type: VideoExercise 
-key:
+type: VideoExercise
+key: 601a2a817d
 lang: r
-xp: 50 
-skills: 1 
-  
-video_link: //player.vimeo.com/video/379871879
+xp: 50
+skills: 1
+video_link: "//player.vimeo.com/video/379871879"
 ```
   
 --- 
@@ -168,7 +167,7 @@ success_msg("Great! That equation is our first model for ice cream consumption f
   
 ```yaml
 type: PureMultipleChoiceExercise
-key: 
+key: 4d2f015161
 lang: r
 xp: 50
 skills: 1
@@ -195,7 +194,7 @@ If we are trying to use a model to estimate a causal effect, we need to have a c
   
 ```yaml
 type: NormalExercise
-key: c28b49d735
+key: 97284a3dbe
 lang: r
 xp: 100
 skills: 1
