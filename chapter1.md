@@ -1,7 +1,12 @@
---- 
-title       : 'Modeling for Causal Inference with Regression'
-description : 'This brief course will introduce you to modeling for causal inference, with practice using different kinds of regression models'
+---
+title: 'Modeling for Causal Inference with Regression'
+description: 'This brief course will introduce you to modeling for causal inference, with practice using different kinds of regression models'
 free_preview: true
 ---
 
 
+
+```yaml
+type: undefined
+key: 4054c49435
+```
