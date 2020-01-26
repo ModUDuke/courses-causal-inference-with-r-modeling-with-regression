@@ -5,8 +5,3 @@ free_preview: true
 ---
 
 
-
-```yaml
-type: undefined
-key: 4054c49435
-```
