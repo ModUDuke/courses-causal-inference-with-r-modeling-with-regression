@@ -23,7 +23,6 @@ key:09bccc78e5
 lang:r
 xp:50 
 skills:1 
-  
 video_link: //player.vimeo.com/video/231746571
 ```
   
