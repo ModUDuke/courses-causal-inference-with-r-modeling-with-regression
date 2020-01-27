@@ -5,11 +5,11 @@ description: 'In this chapter we'll look at the problems of confounders when usi
 
 ## Confounders in Discrete Choice Analysis
 ```yaml
-type:VideoExercise 
-key:059e8eb292
-lang:r
-xp:50 
-skills:1 
+type: VideoExercise 
+key: 059e8eb292
+lang: r
+xp: 50 
+skills: 1 
   
 video_link: //player.vimeo.com/video/231746457
 ```
@@ -44,11 +44,11 @@ Someone doing a Big Data analysis tells you the following. "I included over 1,00
 ---
 ## How Do People Choose Healthcare Plans?
 ```yaml
-type:VideoExercise 
-key:4608217f1d
-lang:r
-xp:50 
-skills:1 
+type: VideoExercise 
+key: 4608217f1d
+lang: r
+xp: 50 
+skills: 1 
   
 video_link: //player.vimeo.com/video/231746698
 ```
@@ -94,11 +94,11 @@ C) Whether having health insurance makes people healthier.
 --- 
 ## Reading the Data to Find Preferences
 ```yaml
-type:VideoExercise 
-key:0dd082cdd9
-lang:r
-xp:50 
-skills:1 
+type: VideoExercise 
+key: 0dd082cdd9
+lang: r
+xp: 50 
+skills: 1 
   
 video_link: //player.vimeo.com/video/231746940
 ```
@@ -128,6 +128,7 @@ In the data presented in that last video, we saw the results of conditional logi
 - Correct. If the coefficient estimates are roughly the same, then that means people care about these two characteristics roughly the same. And that is exactly what we would expect a rational person to think. Now, you could actually justify (C) as being correct, since I didn't tell you what the new confidence intervals / standard errors were! This is something we have to worry about in any finite sample, but here I'm ignoring it just for simplicity.
 - If the confidence intervals were sufficiently large, then we would have to say that we can't tell either way. But here we are looking at the difference in coefficients while ignoring any confidence intervals, so try again.
  
+---
 ## Let's Code: Income Inequality at FutureChew
 ```yaml
 type: VideoExercise 
@@ -164,10 +165,10 @@ Data dictionary:
      `educ` - education in years
   
 `@instructions`
- - 1) Take a look at the structure of the dataset and some initial variable values.
- - 2) Take a guess at which 2 variables will be the most correlated.
- - 3) Take a guess at which 2 variables will be the least correlated.
- - 4) See how close your guesses were by looking at a correlation matrix.
+- 1) Take a look at the structure of the dataset and some initial variable values.
+- 2) Take a guess at which 2 variables will be the most correlated.
+- 3) Take a guess at which 2 variables will be the least correlated.
+- 4) See how close your guesses were by looking at a correlation matrix.
   
 `@hint`
   
