@@ -5,7 +5,6 @@ free_preview: true
 ---
 
 ## The Basics of Modeling Behavior
-
 ```yaml
 type: VideoExercise
 key: 812b575a73
@@ -17,9 +16,7 @@ video_link: //player.vimeo.com/video/231746347
 
 
 ---
-
 ## Discrete Choice Analysis
-
 ```yaml
 type: VideoExercise
 key: 09bccc78e5
@@ -31,9 +28,7 @@ video_link: //player.vimeo.com/video/231746571
 
 
 ---
-
 ## Examples of Discrete Choice Analysis
-
 ```yaml
 type: PureMultipleChoiceExercise
 key: 4dfa681543
@@ -69,9 +64,7 @@ D) Learning the effect of the income tax on whether people participate in the la
 - Correct! These are both situations where a person is making a discrete choice. In (B) they are decided whether to take the drug as prescribed. In (D) they are deciding whether to participate in the labor market. Hence we can use discrete choice analysis to study the causal effects of various policies. In (A) and (C) we are still interested in causal effects, but now there are no people making decisions, so discrete choice analysis (usually) will not apply.
 
 ---
-
 ## Let's Code: Kids Love Ice Cream
-
 ```yaml
 type: VideoExercise
 key: 601a2a817d
@@ -83,9 +76,7 @@ video_link: //player.vimeo.com/video/379871879
 
 
 ---
-
 ## Kids Love Ice Cream: Part 1 - A Theory Before Data
-
 ```yaml
 type: NormalExercise
 key: c28b49d735
@@ -166,9 +157,7 @@ success_msg("Great! That equation is our first model for ice cream consumption f
 ```
 
 ---
-
 ## If Kids Drive Ice Cream Consumption, What Is Our Counterfactual?
-
 ```yaml
 type: PureMultipleChoiceExercise
 key: 4d2f015161
@@ -192,10 +181,9 @@ If we are trying to use a model to estimate a causal effect, we need to have a c
 - We may think that's the opposite of what we expect, but that's not really what a counterfactual is. For a counterfactual, we need to define what would happen if kids have no effect at all. Try again.
 - Correct! Let's assume that children and adults eat exactly the same amount. That way, we can look for either a positive or negative treatment effect of children on a family's ice cream consumption.
 
+
 ---
-
 ## Kids Love Ice Cream: Part 2 - Data Discovery
-
 ```yaml
 type: NormalExercise
 key: 97284a3dbe
@@ -288,9 +276,7 @@ success_msg("Great job. One data point to note is our max value for children in 
 ```
 
 ---
-
 ## Kids Love Ice Cream: Part 3 - Using OLS to Find Modeling Factors
-
 ```yaml
 type: NormalExercise
 key: de1f3cbf85
@@ -367,9 +353,7 @@ success_msg("Nice job. ")
 ```
 
 ---
-
 ## Kids Love Ice Cream: Part 4 - Understanding the Output Table
-
 ```yaml
 type: NormalExercise
 key: 495f3df509
@@ -447,9 +431,7 @@ success_msg("Good work! Our coefficient on `children` has an error margin of rou
 ```
 
 ---
-
 ## Kids Love Ice Cream: Part 5 - Statistical Significance Checks
-
 ```yaml
 type: NormalExercise
 key: a451f86d7c
