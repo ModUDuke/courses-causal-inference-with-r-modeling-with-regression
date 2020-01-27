@@ -25,35 +25,35 @@ lang: r
 xp: 100
 skills: 1
 ```
-  Statistical tools like regression can be used for finding causality under the right conditions, but more often they are used to create predictions, and predictions are not exactly like causal inferences. When someone can't argue that they've accounted for all confounders, and therefore can't claim to infer causality, they might still be able to use their data to get a pretty good sense of where future data may go, and that can be very useful for designing experiments to find causal links. So in this series of questions, we'll explore what some basic prediction methods might look like with non-normal data, and we'll look at how the predictions are different than causal inference.
+Statistical tools like regression can be used for finding causality under the right conditions, but more often they are used to create predictions, and predictions are not exactly like causal inferences. When someone can't argue that they've accounted for all confounders, and therefore can't claim to infer causality, they might still be able to use their data to get a pretty good sense of where future data may go, and that can be very useful for designing experiments to find causal links. So in this series of questions, we'll explore what some basic prediction methods might look like with non-normal data, and we'll look at how the predictions are different than causal inference.
   
-  Inspirational tech and business leader Aaron Musk is promising to deliver low cost "space tourism" to the world by building new space rockets with seats for normal people to buy and fly up into 1 hour orbit of the Earth, all while being piloted by highly trained astronaut monkeys. Musk's new company is called ApeX, and the idea is so cool and popular that you can see their logo can be seen everywhere. However, the company is secretly struggling for money, and almost all of its revenues come from merchandise sales from its millions of fans.
+Inspirational tech and business leader Aaron Musk is promising to deliver low cost "space tourism" to the world by building new space rockets with seats for normal people to buy and fly up into 1 hour orbit of the Earth, all while being piloted by highly trained astronaut monkeys. Musk's new company is called ApeX, and the idea is so cool and popular that you can see their logo can be seen everywhere. However, the company is secretly struggling for money, and almost all of its revenues come from merchandise sales from its millions of fans.
   
-  It has only had a website store for the last few years, but it has recently tried out some "pop-up" stores in the shopping malls of big cities. These are temporary stores selling their products, but ApeX is wondering whether the in-person nature of stores is changing what people buy. In particular, are people more likely to buy different items in different kinds of stores?
+It has only had a website store for the last few years, but it has recently tried out some "pop-up" stores in the shopping malls of big cities. These are temporary stores selling their products, but ApeX is wondering whether the in-person nature of stores is changing what people buy. In particular, are people more likely to buy different items in different kinds of stores?
   
-  So part of ApeX's business needs are to find out how people decide to buy their products either in a store at the mall, on their computers, or on their cell phones, and to see how the location may vary depending on the price of the items. This will help ApeX create marketing strategies for each of those different platforms, and hopefully fund those monkey-piloted space rockets in just a couple of years.
+So part of ApeX's business needs are to find out how people decide to buy their products either in a store at the mall, on their computers, or on their cell phones, and to see how the location may vary depending on the price of the items. This will help ApeX create marketing strategies for each of those different platforms, and hopefully fund those monkey-piloted space rockets in just a couple of years.
   
-  Let's take a look at some of their observational data to help them model how their fans choose to buy items at different prices. The data set `Data` shows a single day's worth of purchases at the web store, the mobile store, and the pop-up stores. It contains 3 variables and over 17,000 observations. The data dictionary is below.
+Let's take a look at some of their observational data to help them model how their fans choose to buy items at different prices. The data set `Data` shows a single day's worth of purchases at the web store, the mobile store, and the pop-up stores. It contains 3 variables and over 17,000 observations. The data dictionary is below.
   
-  Data Dictionary:
+Data Dictionary:
   
      `ID` - subject identifier
      `payment` - choice of payment (store, mobile online, or web online)
      `value` - value of transaction in dollars
   
 `@instructions`
-  - 1) Look at the basic summary statistics and structure of the dataframe.
-  - 2) Look at a graph of the data in aggregate to see if it forms a normal distribution.
-  - 3) Look at a graph of the data to see if we have any patterns of when people buy souvenirs in a store, on a phone, or on a computer.
-  - 4) Create a table that shows the average purchase price by the type of payment, along with the standard errors.
+- 1) Look at the basic summary statistics and structure of the dataframe.
+- 2) Look at a graph of the data in aggregate to see if it forms a normal distribution.
+- 3) Look at a graph of the data to see if we have any patterns of when people buy souvenirs in a store, on a phone, or on a computer.
+- 4) Create a table that shows the average purchase price by the type of payment, along with the standard errors.
   
 `@hint`
   
   
 `@pre_exercise_code`
 ```{r}
-  library(plyr)
-  set.seed(123)
+library(plyr)
+set.seed(123)
   
 #Dataframe
   ID <- 1:17400
@@ -131,25 +131,25 @@ xp: 100
 skills: 1
 ```
   
-  ApeX is coming out with 2 new souvenirs: a $10 bumper sticker that they plan to be exclusively sold in their physical pop-up stores, and a $200 wooden model of the ApeX rocket for sale both online and in stores.
+ApeX is coming out with 2 new souvenirs: a $10 bumper sticker that they plan to be exclusively sold in their physical pop-up stores, and a $200 wooden model of the ApeX rocket for sale both online and in stores.
   
-  The company is trying to predict how people are likely to buy these two items: will the $10 bumper stickers be a good match for the prices people typically pay in stores, or should they be sold only online? Will people want to see the more expensive wooden rocket model in a store before they buy it? Let's look at their data and use a few different prediction models to make an educated guess.
+The company is trying to predict how people are likely to buy these two items: will the $10 bumper stickers be a good match for the prices people typically pay in stores, or should they be sold only online? Will people want to see the more expensive wooden rocket model in a store before they buy it? Let's look at their data and use a few different prediction models to make an educated guess.
   
-  Data Dictionary:
+Data Dictionary:
   
      `ID` - subject identifier
      `payment` - choice of payment (store, mobile, or web)
      `value` - value of transaction in dollars
   
 `@instructions`
-  - 1) Create a dummy variable called `online` that with binary values to mark whether someone paid in-store or a via mobile/web.
-  - 2) Run a linear probability regression of our independent variable `value` on our dependent variable `online`
-  - 3) What is this model's regression coefficient for `value`?
-  - 4) Is that statistically significant?
-  - 5) Run a prediction with this model for items priced at $10 and $200.
-  - 6) What's the probability for buying a $10 online?
-  - 7) What's the probability for buying a $10 item in a pop-up store?
-  - 8) What's the probability for buying a $200 item online?
+- 1) Create a dummy variable called `online` that with binary values to mark whether someone paid in-store or a via mobile/web.
+- 2) Run a linear probability regression of our independent variable `value` on our dependent variable `online`
+- 3) What is this model's regression coefficient for `value`?
+- 4) Is that statistically significant?
+- 5) Run a prediction with this model for items priced at $10 and $200.
+- 6) What's the probability for buying a $10 online?
+- 7) What's the probability for buying a $10 item in a pop-up store?
+- 8) What's the probability for buying a $200 item online?
   
 `@hint`
   
@@ -258,30 +258,30 @@ xp: 100
 skills: 1
 ```
   
-  To avoid the potential issue of getting negative probabilities generated by a linear probability model, analysts and researchers often turn to range of numbers that must be greater than 0 by definition: logarithms. So next we will take a look at a common pair of modeling approaches that use logarithms to guarantee positive probabilities: logistic regression models, also known as "logit" models, and probabilistic regression models, also known as "probit" models. Of course, while we know we'll actually be getting positive probabilities from them, they are a little harder to immediately understand because they use logarithms rather than regular numbers, and each of these two methods has its strengths and weaknesses. 
+To avoid the potential issue of getting negative probabilities generated by a linear probability model, analysts and researchers often turn to range of numbers that must be greater than 0 by definition: logarithms. So next we will take a look at a common pair of modeling approaches that use logarithms to guarantee positive probabilities: logistic regression models, also known as "logit" models, and probabilistic regression models, also known as "probit" models. Of course, while we know we'll actually be getting positive probabilities from them, they are a little harder to immediately understand because they use logarithms rather than regular numbers, and each of these two methods has its strengths and weaknesses. 
   
-  Let's start by trying a logit model, which you will often see when your data has binary values of 0 or 1 in your independent variables. In logit regression, the predicted values are calculated using: 
+Let's start by trying a logit model, which you will often see when your data has binary values of 0 or 1 in your independent variables. In logit regression, the predicted values are calculated using: 
   
   $P (Y = 1|X) = \frac{1}{1+e^{-(\hat{\beta_{0}}+\hat{\beta_{1}}X)}}$
   
-  So let's see if a logit model has a better fit to our data than the Linear Probability Model did.
+So let's see if a logit model has a better fit to our data than the Linear Probability Model did.
   
   
-  Data Dictionary:
+Data Dictionary:
   
      `ID` - subject identifier
      `payment` - choice of payment (store, mobile online, or web online)
      `value` - value of transaction in dollars
   
 `@instructions`
-  - 1) Run a logit regression of our independent variable `value` on our dependent variable `online`
-  - 2) What is this model's regression coefficient for `value`?
-  - 3) Is that statistically significant?
-  - 4) Run a prediction with this model for items priced at $40 and $125.
-  - 5) What's the probability for buying a $40 item online?
-  - 6) What's the probability for buying a $40 item  in a pop-up store?
-  - 7) What's the probability for buying a $125 item online?
-  - 8) What's the probability for buying a $125 item in a pop-up store?
+- 1) Run a logit regression of our independent variable `value` on our dependent variable `online`
+- 2) What is this model's regression coefficient for `value`?
+- 3) Is that statistically significant?
+- 4) Run a prediction with this model for items priced at $40 and $125.
+- 5) What's the probability for buying a $40 item online?
+- 6) What's the probability for buying a $40 item  in a pop-up store?
+- 7) What's the probability for buying a $125 item online?
+- 8) What's the probability for buying a $125 item in a pop-up store?
   
 `@hint`
   
@@ -403,27 +403,27 @@ xp: 100
 skills: 1
 ```
   
-  There's another kind of probability model that we should check before we're done called a probit model, and it's often done as a counterpart to logit models, so let's try that too. In probit regression, the predicted values are calculated using as a cumulative probability distribution function of standard normal distribution, which starts out at 0 and maxes out at 1, like this:
+There's another kind of probability model that we should check before we're done called a probit model, and it's often done as a counterpart to logit models, so let's try that too. In probit regression, the predicted values are calculated using as a cumulative probability distribution function of standard normal distribution, which starts out at 0 and maxes out at 1, like this:
    
   $P (Y = 1|X) = \phi(\hat{\beta_{0}}+\hat{\beta_{1}}X)$
   
-  Thus, thepredicted values are bounded between 0 and 1. Let's see what a probit model can do for predicting our data.
+Thus, the predicted values are bounded between 0 and 1. Let's see what a probit model can do for predicting our data.
   
-  Data Dictionary:
+Data Dictionary:
   
      `ID` - subject identifier
      `payment` - choice of payment (store, mobile online, or web online)
      `value` - value of transaction in dollars
   
 `@instructions`
-  - 1) Run a probit regression of our independent variable `value` on our dependent variable `online`
-  - 2) What is this model's regression coefficient for `value`?
-  - 3) Is that statistically significant?
-  - 4) Run a prediction with this model for items priced at $65 and $75.
-  - 5) What's the probability for buying a $65 item online?
-  - 6) What's the probability for buying a $65 item in a pop-up store?
-  - 7) What's the probability for buying a $75 item online?
-  - 8) What's the probability for buying a $75 item in a pop-up store?
+- 1) Run a probit regression of our independent variable `value` on our dependent variable `online`
+- 2) What is this model's regression coefficient for `value`?
+- 3) Is that statistically significant?
+- 4) Run a prediction with this model for items priced at $65 and $75.
+- 5) What's the probability for buying a $65 item online?
+- 6) What's the probability for buying a $65 item in a pop-up store?
+- 7) What's the probability for buying a $75 item online?
+- 8) What's the probability for buying a $75 item in a pop-up store?
   
 `@hint`
   
@@ -529,7 +529,7 @@ xp: 100
 skills: 1
 ```
   
-  To see whether the logit or the probit model fits our data the best, let's look again at the AIC values for each. Once again, the model with the highest AIC value has the best fit (even if that value is still negative!). Which model fits the data best, according to the AIC values?
+To see whether the logit or the probit model fits our data the best, let's look again at the AIC values for each. Once again, the model with the highest AIC value has the best fit (even if that value is still negative!). Which model fits the data best, according to the AIC values?
   
 `@pre_exercise_code`
 ```{r}
@@ -558,9 +558,11 @@ skills: 1
 ```
   
 `@hint`
+- The dataframe is called `Data`
   
 `@sample_code`
-# 1) Run each of our 3 models one more time so we can look at the summary statistics, including the AIC values for the logit and probit models. In each o
+```{r}
+# 1) Run each of our 3 models one more time so we can look at the summary statistics, including the AIC values for the logit and probit models. In each of the following, fill in the R code below, where X is the dependent variable, Y is the independent variable, and Z is the name of the dataframe
   
 # Generic form for a linear probability model:
   
@@ -581,7 +583,8 @@ skills: 1
   
       Highest.AIC<-""
   
-  
+```
+ 
 `@solution`
 ```{r}
   lpm<-lm(online ~ value, data=Data)
@@ -598,7 +601,7 @@ success_msg("Great job! The probit model has a very slightly higher AIC value, w
   
   
   
-  --
+---
 ## Do Our Data Identify The Cause Of Our Outcomes?
   
 ```yaml
@@ -609,15 +612,15 @@ xp: 50
 skills: 1
 ```
   
-  To summarize what we found in the ApeX purchasing data, we tried multiple models to help us predict how consumers might want to purchase ApeX's newest fan products, a $10 bumper sticker and a $200 wooden rocket model. The results of these models can be seen in the graph to the right.
+To summarize what we found in the ApeX purchasing data, we tried multiple models to help us predict how consumers might want to purchase ApeX's newest fan products, a $10 bumper sticker and a $200 wooden rocket model. The results of these models can be seen in the graph to the right.
   
-  We found that the logit and probit models matched the data better than our linear probability model, and that logit and probit models always gives us a probability between 0 and 100%. All of the models seem to meet up around a single point, where we can interpret our customers are making the basic choice between buying something in person and buying it online.
+We found that the logit and probit models matched the data better than our linear probability model, and that logit and probit models always gives us a probability between 0 and 100%. All of the models seem to meet up around a single point, where we can interpret our customers are making the basic choice between buying something in person and buying it online.
   
-  Now that we have run these predictive models, would you say that our data provide enough information to tell us what exactly about the pop-up stores *causes* consumers buy to less expensive items in pop-up stores than they do online?
+Now that we have run these predictive models, would you say that our data provide enough information to tell us what exactly about the pop-up stores *causes* consumers buy to less expensive items in pop-up stores than they do online?
   
 `@hint`
   
- `@sample_data`
+`@sample_data`
 ```{r}
   set.seed(123)
 #Dataframe
@@ -654,19 +657,19 @@ skills: 1
 ```
   
   
- `@possible_answers`
-  - Yes
-  - [No]
+`@possible_answers`
+- Yes
+- [No]
   
 `@sct`
 ```{r}
-  msg1= "No, try again."
-  msg2= "That's correct, we cannot tell the reasons why people prefer to buy less expensive items in person and more expensive items online. This is one of the reasons that we cannot claim that this is a causal effect. We clearly have confounding variables that we are not accounting for. But we do have a prediction that our consumers' behavior was changing between $70-$80 purchases, and perhaps that insight will allow us to conduct experiments or gather more observational data in the future to try to learn about the causality involved."
+msg1= "No, try again."
+msg2= "That's correct, we cannot tell the reasons why people prefer to buy less expensive items in person and more expensive items online. This is one of the reasons that we cannot claim that this is a causal effect. We clearly have confounding variables that we are not accounting for. But we do have a prediction that our consumers' behavior was changing between $70-$80 purchases, and perhaps that insight will allow us to conduct experiments or gather more observational data in the future to try to learn about the causality involved."
 ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2))
 ```
   
   
-  --
+---
 ## Making a Decision About ApeX Merchandizing
   
 ```yaml
@@ -677,15 +680,15 @@ xp: 50
 skills: 1
 ```
   
-  To summarize what we found in the ApeX purchasing data, we tried multiple models to help us predict how consumers might want to purchase ApeX's newest fan products, a $10 bumper sticker and a $200 wooden rocket model. The results of these models can be seen in the graph to the right:
+To summarize what we found in the ApeX purchasing data, we tried multiple models to help us predict how consumers might want to purchase ApeX's newest fan products, a $10 bumper sticker and a $200 wooden rocket model. The results of these models can be seen in the graph to the right:
   
-  We found that the probit model matches the data better than our logit model, and it always gives us a probability between 0 and 100%. The probit model predicts that people are about 10% likely to buy a $10 item online, but 100% likely to buy it online if it costs $200.
+We found that the probit model matches the data better than our logit model, and it always gives us a probability between 0 and 100%. The probit model predicts that people are about 10% likely to buy a $10 item online, but 100% likely to buy it online if it costs $200.
   
-  All 3 models seem to show a tipping point around $70 where people start to become more likely to buy items online rather than in-person at a pop-up store at the mall. So what would you advise ApeX to do with their in-store segment?
+All 3 models seem to show a tipping point around $70 where people start to become more likely to buy items online rather than in-person at a pop-up store at the mall. So what would you advise ApeX to do with their in-store segment?
   
 `@hint`
   
- `@sample_data`
+`@sample_data`
 ```{r}
   set.seed(123)
 #Dataframe
@@ -722,11 +725,11 @@ skills: 1
 ```
   
   
- `@possible_answers`
-  - The most expensive things have a 100% probability of being purchased, so only sell the most expensive items
-  - There is a tipping point around $70, so only sell items over $70
-  - [There is a tipping point around $70, so only sell items under $70]
-  - It's the monkeys that people like, so only sell monkey-related items
+`@possible_answers`
+- The most expensive things have a 100% probability of being purchased, so only sell the most expensive items
+- There is a tipping point around $70, so only sell items over $70
+- [There is a tipping point around $70, so only sell items under $70]
+- It's the monkeys that people like, so only sell monkey-related items
   
 `@sct`
 ```{r}
