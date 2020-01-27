@@ -6,11 +6,11 @@ description: 'Predictions about the future are not causal inference, but they ar
 
 ## Let's Code: Making Money for Space Travel
 ```yaml
-type:VideoExercise 
+type: VideoExercise 
 key:
-lang:r
-xp:50 
-skills:1 
+lang: r
+xp: 50 
+skills:1  
   
 video_link: //player.vimeo.com/video/379871855
 ```
@@ -25,6 +25,7 @@ lang: r
 xp: 100
 skills: 1
 ```
+
 Statistical tools like regression can be used for finding causality under the right conditions, but more often they are used to create predictions, and predictions are not exactly like causal inferences. When someone can't argue that they've accounted for all confounders, and therefore can't claim to infer causality, they might still be able to use their data to get a pretty good sense of where future data may go, and that can be very useful for designing experiments to find causal links. So in this series of questions, we'll explore what some basic prediction methods might look like with non-normal data, and we'll look at how the predictions are different than causal inference.
   
 Inspirational tech and business leader Aaron Musk is promising to deliver low cost "space tourism" to the world by building new space rockets with seats for normal people to buy and fly up into 1 hour orbit of the Earth, all while being piloted by highly trained astronaut monkeys. Musk's new company is called ApeX, and the idea is so cool and popular that you can see their logo can be seen everywhere. However, the company is secretly struggling for money, and almost all of its revenues come from merchandise sales from its millions of fans.
@@ -733,10 +734,10 @@ All 3 models seem to show a tipping point around $70 where people start to becom
   
 `@sct`
 ```{r}
-  msg1= "This is a mis-interpretation of the numbers. They don't show that $200 items have a 100% chance of being purchased, they show that $200 items have a 100% chance of being purchased on the web or mobile stores. Try again."
-  msg2= "Items over $70 are more likely to be purchased online, so this answer is not playing to the strengths of the pop-up stores. Try again."
-  msg3= "Correct! There is something about the pop-up stores that lead to purchases of items under $70, so having more of these items in pop-up stores is playing to the expressed preferences of the customers. These data don't tell us exactly why that is, but this is where the data are leading us. We would need another project, likely with customer surveys, to narrow down the exact reasons why we see this behavior."
-  msg4= "These data don't exactly tell us why people like to buy less expensive items at pop-up stores and more expensive items online, much less that they're doing it for the monkeys. Try again."
+msg1= "This is a mis-interpretation of the numbers. They don't show that $200 items have a 100% chance of being purchased, they show that $200 items have a 100% chance of being purchased on the web or mobile stores. Try again."
+msg2= "Items over $70 are more likely to be purchased online, so this answer is not playing to the strengths of the pop-up stores. Try again."
+msg3= "Correct! There is something about the pop-up stores that lead to purchases of items under $70, so having more of these items in pop-up stores is playing to the expressed preferences of the customers. These data don't tell us exactly why that is, but this is where the data are leading us. We would need another project, likely with customer surveys, to narrow down the exact reasons why we see this behavior."
+msg4= "These data don't exactly tell us why people like to buy less expensive items at pop-up stores and more expensive items online, much less that they're doing it for the monkeys. Try again."
 ex() %>% check_mc(3, feedback_msgs = c(msg1, msg2, msg3, msg4))
 ```
     
