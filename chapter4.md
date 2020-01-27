@@ -5,11 +5,11 @@ description: 'If you want to find out the causes for something, the best option 
 
 ## Using Modeling When Experiments Are Impossible
 ```yaml
-type:VideoExercise 
-key:4c6f64e320
-lang:r
-xp:50 
-skills:1 
+type: VideoExercise 
+key: 4c6f64e320
+lang: r
+xp: 50 
+skills: 1 
   
 video_link: //player.vimeo.com/video/231747210
 ```
@@ -25,32 +25,32 @@ xp: 50
 skills: 1
 ```
   
-  What is the best reason to use a model to find causality instead of a randomized control experiment?
+What is the best reason to use a model to find causality instead of a randomized control experiment?
   
 `@hint`
   
- `@possible_answers`
-  - I already tried an experiment that did not give me the expected result, so I want to try modeling instead.
-  - My treatment happened in the past, so I can't create a new experiment to test it in the future.
-  - A control group doesn't make sense with my topic, so I will use modeling instead.
-  - Creating a control and treatment group would require me to do something immoral and possibly illegal.
+`@possible_answers`
+- I already tried an experiment that did not give me the expected result, so I want to try modeling instead.
+- My treatment happened in the past, so I can't create a new experiment to test it in the future.
+- A control group doesn't make sense with my topic, so I will use modeling instead.
+- [Creating a control and treatment group would require me to do something immoral and possibly illegal.]
   
   
- `@feedback`
-  - A well run experiment is almost always more trustworthy than a model of that same causal effect. Maybe the experiment was right and your hypothesis was wrong, that's a big part of science! Try again.
-  - In some cases, you actually can use experimental techniques on historical data to find causalities. While you can't always do it, there are a lot of great techniques to find causality within past data (check out our other Casual Inference with R courses to find out more). Try again!
-  - In order to find a causal effect, you need to have a control group and a treatment group, whether it's in an experiment or another method. If you can't create both groups, then whatever you are modeling will not be for causal inference. Try again
-  - Correct. This is a great reason not to do something, no matter what it is! Like we mentioned in our videos, sometimes you just can't run an experiment if it involves harming others or destroying something valuable, so we need to look to creating really good models instead.
+`@feedback`
+- A well run experiment is almost always more trustworthy than a model of that same causal effect. Maybe the experiment was right and your hypothesis was wrong, that's a big part of science! Try again.
+- In some cases, you actually can use experimental techniques on historical data to find causalities. While you can't always do it, there are a lot of great techniques to find causality within past data (check out our other Casual Inference with R courses to find out more). Try again!
+- In order to find a causal effect, you need to have a control group and a treatment group, whether it's in an experiment or another method. If you can't create both groups, then whatever you are modeling will not be for causal inference. Try again
+- Correct. This is a great reason not to do something, no matter what it is! Like we mentioned in our videos, sometimes you just can't run an experiment if it involves harming others or destroying something valuable, so we need to look to creating really good models instead.
   
 --- 
 ## Modeling the Impact of Government Stimulus
   
 ```yaml
-type:VideoExercise 
-key:cc7e8a6309
-lang:r
-xp:50 
-skills:1 
+type: VideoExercise 
+key: cc7e8a6309
+lang: r
+xp: 50 
+skills: 1 
   
 video_link: //player.vimeo.com/video/231746794
 ```
@@ -66,29 +66,29 @@ xp: 50
 skills: 1
 ```
   
-  True or false: The 2009 stimulus worked and helped end the Great Recession.
+True or false: The 2009 government stimulus worked and helped end the Great Recession.
   
 `@hint`
   
- `@possible_answers`
-  - We have proved that it did work
-  - The data shows it had no effect
-  - [I can't tell either way]
+`@possible_answers`
+- We have proved that it did work
+- The data shows it had no effect
+- [I can't tell either way]
   
- `@feedback`
-  - It's a good and important question, but unfortunately since we cannot observe the counterfactual outcome, the answer is not clear. Macroeconomists are still working to overcome this very difficult problem! (hint: put on your serious scientist hat and try again).
-  - It's a good and important question, but unfortunately since we cannot observe the counterfactual outcome, the answer is not clear. Macroeconomists are still working to overcome this very difficult problem! (hint: put on your serious scientist hat and try again)
-  - It's a good and important question, but unfortunately since we cannot observe the counterfactual outcome, the answer is not clear. Macroeconomists are still working to overcome this very difficult problem!
+`@feedback`
+- It's a good and important question, but unfortunately since we cannot observe the counterfactual outcome, the answer is not clear. Macroeconomists are still working to overcome this very difficult problem! (hint: put on your serious scientist hat and try again).
+- It's a good and important question, but unfortunately since we cannot observe the counterfactual outcome, the answer is not clear. Macroeconomists are still working to overcome this very difficult problem! (hint: put on your serious scientist hat and try again)
+- It's a good and important question, but unfortunately since we cannot observe the counterfactual outcome, the answer is not clear. Macroeconomists are still working to overcome this very difficult problem!
   
   
 --- 
 ## Let's Code: Red Wine - The Secret to Living Longer?
 ```yaml
-type:VideoExercise 
+type: VideoExercise 
 key:
-lang:r
-xp:50 
-skills:1 
+lang: r
+xp: 50 
+skills: 1 
   
 video_link: //player.vimeo.com/video/379871850
 ```
@@ -105,20 +105,20 @@ xp: 100
 skills: 1
 ```
   
-  Red wine has resveratrol, a substance that reduces the risk for heart disease. Moderate consumption of red wine is believed to promote longevity. Jenny is very health-conscious and wants to figure out whether red wine is a longevity promoter. She is interested in examining the effect of wine consumption on longevity. She doesn't have the capacity to run a huge medical experiment herself, so she decides to instead download some public data and develop some models to see what she can learn. The data set `Data.wine` contains 4 variables and 60 observations. The data dictionary is below.
+Red wine has resveratrol, a substance that reduces the risk for heart disease. Moderate consumption of red wine is believed to promote longevity. Jenny is very health-conscious and wants to figure out whether red wine is a longevity promoter. She is interested in examining the effect of wine consumption on longevity. She doesn't have the capacity to run a huge medical experiment herself, so she decides to instead download some public data and develop some models to see what she can learn. The data set `Data.wine` contains 4 variables and 60 observations. The data dictionary is below.
   
-  Data Dictionary:
+Data Dictionary:
      `ID` - subject identifier
      `Wine`- drinking level (light, moderate, and heavy)
      `Age` - age at death
      `Exercise` - hours spent on exercise per week
      
 `@instructions`
-  - 1) Get a sense of the variable names, types, and values in our dataset.
-  - 2) Create a box plot that compares the amount a person drinks to how long they live.
-  - 3) Run a regression to see the connection between wine consumption and the average age at death.
-  - 4) Does the amount you exercise affect this relationship between wine drinking and lifespan?
-  - 5) Run a regression on wine consumption and lifespan that compensates for exercise level.
+- 1) Get a sense of the variable names, types, and values in our dataset.
+- 2) Create a box plot that compares the amount a person drinks to how long they live.
+- 3) Run a regression to see the connection between wine consumption and the average age at death.
+- 4) Does the amount you exercise affect this relationship between wine drinking and lifespan?
+- 5) Run a regression on wine consumption and lifespan that compensates for exercise level.
   
 `@hint`
   
@@ -219,14 +219,14 @@ xp: 100
 skills: 1
 ```
   
-  We've seen that people who drink moderate amounts of red wine also tend to exercise more than others, and while these moderate drinkers do live longer than light and heavy wine drinkers, that seems to be due to their level of exercise, not their wine drinking. But when we look closer at wine drinkers, can we really argue that our model accounts for all possible variables? Does a wine with half the resveratrol have half the treament effect? Is the effect the same for both men and women? Let's see how this model holds up when we add two new sets of information:
+We've seen that people who drink moderate amounts of red wine also tend to exercise more than others, and while these moderate drinkers do live longer than light and heavy wine drinkers, that seems to be due to their level of exercise, not their wine drinking. But when we look closer at wine drinkers, can we really argue that our model accounts for all possible variables? Does a wine with half the resveratrol have half the treament effect? Is the effect the same for both men and women? Let's see how this model holds up when we add two new sets of information:
   
-  The new dataframe `Survey.Data` has information about red wines, white wines (which have nearly none of the chemical resveratrol), and rose wines (which have about half as much resveratrol as red wine). Is it really the resveratrol making the difference? If so, then we should see that rose wines, with 1/2 of the resveratrol as red wines, should have 1/2 the treatment effect of red wines.
+The new dataframe `Survey.Data` has information about red wines, white wines (which have nearly none of the chemical resveratrol), and rose wines (which have about half as much resveratrol as red wine). Is it really the resveratrol making the difference? If so, then we should see that rose wines, with 1/2 of the resveratrol as red wines, should have 1/2 the treatment effect of red wines.
   
-  To model this, we will use new data from a large national health survey that includes over 6000 individuals who admit to having least one drink per week and who have died since they began the survey. The alcoholic drinks included in this survey could be wine, beer, or hard liquor, and the dataframe counts how many glasses of each alcoholic beverage the individuals drink per week, and the amount of resveratrol that is in each glass (based on the brand and type consumed). We also have data on their level of physical activity, age at death, and gender.
+To model this, we will use new data from a large national health survey that includes over 6000 individuals who admit to having least one drink per week and who have died since they began the survey. The alcoholic drinks included in this survey could be wine, beer, or hard liquor, and the dataframe counts how many glasses of each alcoholic beverage the individuals drink per week, and the amount of resveratrol that is in each glass (based on the brand and type consumed). We also have data on their level of physical activity, age at death, and gender.
   
   
-  Data Dictionary for the dataframe `Survey.Data`:
+Data Dictionary for the dataframe `Survey.Data`:
     
     `ID` - subject identifier
     `Wine`- drinking level (light, moderate, and heavy)
@@ -262,13 +262,13 @@ skills: 1
     
     
 `@instructions`
-  - 1) Explore the dataset on your own.
-  - 2) Look at the means of our key variables of interest.
-  - 3) Run a plot of the amount of exercise our participants got per week.
-  - 4) Run an initial regression model of red wine consumption and exercise on lifespan in this new dataset.
-  - 5) See what happens when we add the additional drink types in this dataset to our model.
-  - 6) See what happens when we add gender as a variable to our model.
-  - 7) Write out the estimated Average Treatment Effect produced by this model.
+- 1) Explore the dataset on your own.
+- 2) Look at the means of our key variables of interest.
+- 3) Run a plot of the amount of exercise our participants got per week.
+- 4) Run an initial regression model of red wine consumption and exercise on lifespan in this new dataset.
+- 5) See what happens when we add the additional drink types in this dataset to our model.
+- 6) See what happens when we add gender as a variable to our model.
+- 7) Write out the estimated Average Treatment Effect produced by this model.
   
   
 `@hint`
@@ -276,8 +276,8 @@ skills: 1
   
 `@pre_exercise_code`
 ```{r}
-  library(plyr)
-  set.seed(123)
+library(plyr)
+set.seed(123)
   
 #Survey.Data version
   
@@ -331,7 +331,6 @@ skills: 1
 Survey.Data$Age <- round(sample(rnorm(6135,78,10)))
   
 Survey.Data$Age<-(Survey.Data$Age*((Survey.Data$res.red.wine+Survey.Data$res.rose.wine)/10))+Survey.Data$Age-Survey.Data$res.white.wine*5
-  
 ```
   
   
@@ -497,12 +496,12 @@ Data Dictionary for the dataframe `Survey.Data`:
     `total.res` - the total average milligrams of resveratrol from all drinks per week 
   
 `@instructions`
-  - 1) Re-examine the basic statistics on the amount of drinks our participants are having per week.
-  - 2) Subset our data to exclude outliers.
-  - 3) Run our model again on this subsetted data.
-  - 4) Decide if the average number of drinks per week is a confounding variable.
-  - 5) Write out our final model.
-  - 6) Write out the estimated Average Treatment Effect of drinkin red wine on how long someone lives
+- 1) Re-examine the basic statistics on the amount of drinks our participants are having per week.
+- 2) Subset our data to exclude outliers.
+- 3) Run our model again on this subsetted data.
+- 4) Decide if the average number of drinks per week is a confounding variable.
+- 5) Write out our final model.
+- 6) Write out the estimated Average Treatment Effect of drinkin red wine on how long someone lives
     
 `@hint`
   
