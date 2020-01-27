@@ -93,6 +93,7 @@ lang: r
 xp: 100
 skills: 1
 ```
+
 `@instructions`
 - 1) Estimate your personal ice cream consumption per month and over a year.
 - 2) Estimate the average adult's ice cream consumption per month and over a year.
@@ -175,14 +176,12 @@ skills: 1
   
 If we are trying to use a model to estimate a causal effect, we need to have a clear counterfactual. Let's say we think kids eat more ice cream than adults, and we have a dataset that shows a list of families, how many kids they have, and how much ice cream they ate in total. What would a good counterfactual be to help us test the effect of having children on a family's ice cream consumption?
   
-`@hint`
-  
- `@possible_answers`
+`@possible_answers`
 - The difference between what children eat and what adults eat is positive (kids eat more)
 - The difference between what children eat and what adults eat is negative (kids eat less)
 - [The difference between what children eat and what adults eat is 0]
   
- `@feedback`
+`@feedback`
 - We may think that's ultimately true, but for a counterfactual, we need to define what would happen if kids have no effect at all. Try again.
 - We may think that's the opposite of what we expect, but that's not really what a counterfactual is. For a counterfactual, we need to define what would happen if kids have no effect at all. Try again.
 - Correct! Let's assume that children and adults eat exactly the same amount. That way, we can look for either a positive or negative treatment effect of children on a family's ice cream consumption.
