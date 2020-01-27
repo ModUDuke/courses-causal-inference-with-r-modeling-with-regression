@@ -61,13 +61,7 @@ D) Learning the effect of the income tax on whether people participate in the la
 - There is another answer that also qualifies, so try again.
 - In (A) and (C) we are still interested in causal effects, but now there are no people making decisions, so discrete choice analysis (usually) will not apply.
 - Correct! These are both situations where a person is making a discrete choice. In (B) they are decided whether to take the drug as prescribed. In (D) they are deciding whether to participate in the labor market. Hence we can use discrete choice analysis to study the causal effects of various policies. In (A) and (C) we are still interested in causal effects, but now there are no people making decisions, so discrete choice analysis (usually) will not apply.
-  
-  
-  
-## OVERALL NOTE: I FEEL LIKE OUR CODING QUESTIONS SHOULD DEFAULT TO END WITH PEOPLE WRITING OUT AN ALGORITHM/MODEL BASED ON THEIR REGRESSION COEFFICIENTS. IT'S A MODELING CHAPTER, SO EACH CODING QUESTION SHOULD END WITH A MODEL, NOT JUST A VALUE. 
-  
-## OR AT LEAST, IT SHOULD PHRASE THE LAST QUESTION AS "THIS MODEL STATES THAT THE CAUSAL EFFECT OF X ON Y IS Z DOLLARS/POINTS"
-  
+
   
 --- 
 ## Let's Code: Kids Love Ice Cream
@@ -77,7 +71,7 @@ key: 601a2a817d
 lang: r
 xp: 50
 skills: 1
-video_link: "//player.vimeo.com/video/379871879"
+video_link: //player.vimeo.com/video/379871879
 ```
   
 --- 
