@@ -212,9 +212,9 @@ Data Dictionary:
   
    
 `@instructions`
-  - 1) Get a quick sense of the variable names and variable types 
-  - 2) Show the descriptive statistics of `consumption`, `children`, and `age`. 
-  - 3) What's the maximum number of children in a family for this sample?
+ - 1) Get a quick sense of the variable names and variable types 
+ - 2) Show the descriptive statistics of `consumption`, `children`, and `age`. 
+ - 3) What's the maximum number of children in a family for this sample?
   
 `@hint`
   - Use the `summary` function to generate a table of summary statistics about `icecream`.
@@ -306,13 +306,13 @@ skills: 1
      `age` - average age of the children 
   
 `@instructions`
-  - 1) Use the `lm` function to create a linear regression of children and age on ice cream consumption.
-  - 2) Use the `summary` function to generate a table of summary statistics about that regression.
-  - 3) Create an equation for a model of family ice cream consumption based on our results.
+ - 1) Use the `lm` function to create a linear regression of children and age on ice cream consumption.
+ - 2) Use the `summary` function to generate a table of summary statistics about that regression.
+ - 3) Create an equation for a model of family ice cream consumption based on our results.
   
 `@hint`
-  - The first step is to put the output of your `lm` command into a dataframe like this: regression<-with(dataframe, lm(outcome ~ variable1+variable2))
-  - Then output the summary statistics of that dataframe with summary(Solution1)
+ - The first step is to put the output of your `lm` command into a dataframe like this: regression<-with(dataframe, lm(outcome ~ variable1+variable2))
+ - Then output the summary statistics of that dataframe with summary(Solution1)
   
 `@pre_exercise_code`
 ```{r}
@@ -382,10 +382,10 @@ skills: 1
   Running a regression is the easy part, and before we can finish our argument for causality, we need to interpret our regression in the context of our theoretical framework, central question, and the limitations of our data. So let's break down the numbers and look at what they can (or can't) tell us about our main question about the impact of kids on a family's ice cream consumption.
   
 `@instructions`
-  - 1) Run the summary() command on our model 
-  - 2) What's the coefficient on `children`?
-  - 3) What's the standard error of this estimate?
-  - 4) Fill out a model for ice cream consumption using these coefficients
+ - 1) Run the summary() command on our model 
+ - 2) What's the coefficient on `children`?
+ - 3) What's the standard error of this estimate?
+ - 4) Fill out a model for ice cream consumption using these coefficients
   
 `@hint`
   
@@ -464,34 +464,34 @@ skills: 1
   
   There are several numbers that the summary() function generates that that can help us decide whether our coefficients are statistically significant, so let's look at 3 of them: the t-statistic, the p-value, and the $R^$2 value. 
   
-  - **Interpreting t-statistics**
-  - A t-statistic of 0 is the worst case scenario. It means that we should have zero confidence in the statistical significance of our regression coefficient.
-  - In contrast, a t-statistic larger than +/-2 usually means that you can have over 95% confidence in your coefficient's significance, and the larger the t-statistic, the more confidence you can have in your coefficient's predictive power. 
-  - **Interpreting p-values**
-  - A p-values range from 0 to 1, and express the likelihood that our results are due to chance.
-  - Typically, p-values under 0.05 are considered statistically significant
-  - **Interpreting $R^2$ values**
-  - 0% indicates that the model explains none of the variability of the response data around its mean. 
-  - 100% indicates that the model explains all the variability of the response data around its mean. 
+ - **Interpreting t-statistics**
+ - A t-statistic of 0 is the worst case scenario. It means that we should have zero confidence in the statistical significance of our regression coefficient.
+ - In contrast, a t-statistic larger than +/-2 usually means that you can have over 95% confidence in your coefficient's significance, and the larger the t-statistic, the more confidence you can have in your coefficient's predictive power. 
+ - **Interpreting p-values**
+ - A p-values range from 0 to 1, and express the likelihood that our results are due to chance.
+ - Typically, p-values under 0.05 are considered statistically significant
+ - **Interpreting $R^2$ values**
+ - 0% indicates that the model explains none of the variability of the response data around its mean. 
+ - 100% indicates that the model explains all the variability of the response data around its mean. 
   
 `@instructions`
-  - 1) Examine the t-statistic for our estimated effect of the number of children in a family on ice cream consumption
-  - 2) Examine the p-value for that estimate
-  - 3) Examine the R-squared value of our model
-  - 4) Determine what the R-squared value tells us about this model
-  - 5) Determine what the p-value tells us about this model
-  - 6) Choose the variable that is best at predicting family ice cream consumption
+ - 1) Examine the t-statistic for our estimated effect of the number of children in a family on ice cream consumption
+ - 2) Examine the p-value for that estimate
+ - 3) Examine the R-squared value of our model
+ - 4) Determine what the R-squared value tells us about this model
+ - 5) Determine what the p-value tells us about this model
+ - 6) Choose the variable that is best at predicting family ice cream consumption
   
 `@hint`
-  - **Interpreting t-statistics**
-  - A t-statistic of 0 is the worst case scenario. It means that we should have zero confidence in the statistical significance of our regression coefficient.
-  - In contrast, a t-statistic larger than +/-2 usually means that you can have over 95% confidence in your coefficient's significance, and the larger the t-statistic, the more confidence you can have in your coefficient's predictive power. 
-  - **Interpreting p-values**
-  - A p-values range from 0 to 1, and express the likelihood that our results are due to chance.
-  - Typically, p-values under 0.05 are considered statistically significant
-  - **Interpreting $R^2$ values**
-  - 0% indicates that the model explains none of the variability of the response data around its mean. 
-  - 100% indicates that the model explains all the variability of the response data around its mean. 
+ - **Interpreting t-statistics**
+ - A t-statistic of 0 is the worst case scenario. It means that we should have zero confidence in the statistical significance of our regression coefficient.
+ - In contrast, a t-statistic larger than +/-2 usually means that you can have over 95% confidence in your coefficient's significance, and the larger the t-statistic, the more confidence you can have in your coefficient's predictive power. 
+ - **Interpreting p-values**
+ - A p-values range from 0 to 1, and express the likelihood that our results are due to chance.
+ - Typically, p-values under 0.05 are considered statistically significant
+ - **Interpreting $R^2$ values**
+ - 0% indicates that the model explains none of the variability of the response data around its mean. 
+ - 100% indicates that the model explains all the variability of the response data around its mean. 
   
   
 `@pre_exercise_code`
