@@ -225,7 +225,6 @@ The new dataframe `Survey.Data` has information about red wines, white wines (wh
   
 To model this, we will use new data from a large national health survey that includes over 6000 individuals who admit to having least one drink per week and who have died since they began the survey. The alcoholic drinks included in this survey could be wine, beer, or hard liquor, and the dataframe counts how many glasses of each alcoholic beverage the individuals drink per week, and the amount of resveratrol that is in each glass (based on the brand and type consumed). We also have data on their level of physical activity, age at death, and gender.
   
-  
 Data Dictionary for the dataframe `Survey.Data`:
     
     `ID` - subject identifier
