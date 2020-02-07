@@ -412,7 +412,7 @@ Survey.Data$Age<-(Survey.Data$Age*((Survey.Data$res.red.wine+Survey.Data$res.ros
 `@sct`
 ```{r}
 ex() %>% check_error()
-success_msg("")
+success_msg("Nice work! This dataset has a lot more variables and participants than our first dataset, but at least some of the results seem to be holding up. The chemical resveratrol, common in red wines, does seem to show a positive impact on life expectancy. But we're not quite done. We do have some potential confounders to consider that might also be effecting life expectancy in these survey subjects, so let's look into that next.")
 ```
   
 --- 
@@ -620,6 +620,6 @@ Data Dictionary for the dataframe `Survey.Data`:
 `@sct`
 ```{r}
 ex() %>% check_error()
-success_msg("Great job!")
+success_msg("Great job! It really does look like our average treatment effect of resveratrol on life expectancy is positive and statistically significant, even when accounting for heavy wine drinkers, which would likely be our biggest potential confounder. Our model works!")
 ```
 
