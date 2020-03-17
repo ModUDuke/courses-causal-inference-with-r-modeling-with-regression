@@ -6,7 +6,7 @@ description: 'In this chapter we'll look at the problems of confounders when usi
 ## Confounders in Discrete Choice Analysis
 ```yaml
 type: VideoExercise 
-key: 059e8eb292
+key:
 lang: r
 xp: 50 
 skills: 1 
@@ -20,7 +20,7 @@ video_link: //player.vimeo.com/video/231746457
   
 ```yaml
 type: PureMultipleChoiceExercise
-key: d81765e7b7
+key:
 lang: r
 xp: 50
 skills: 1
@@ -45,7 +45,7 @@ Someone doing a Big Data analysis tells you the following. "I included over 1,00
 ## How Do People Choose Healthcare Plans?
 ```yaml
 type: VideoExercise 
-key: 4608217f1d
+key:
 lang: r
 xp: 50 
 skills: 1 
@@ -59,7 +59,7 @@ video_link: //player.vimeo.com/video/231746698
   
 ```yaml
 type: PureMultipleChoiceExercise
-key: fe92309865
+key:
 lang: r
 xp: 50
 skills: 1
@@ -95,7 +95,7 @@ C) Whether having health insurance makes people healthier.
 ## Reading the Data to Find Preferences
 ```yaml
 type: VideoExercise 
-key: 0dd082cdd9
+key:
 lang: r
 xp: 50 
 skills: 1 
@@ -108,7 +108,7 @@ video_link: //player.vimeo.com/video/231746940
 ## Reading the Coefficient Estimates 
 ```yaml
 type: PureMultipleChoiceExercise
-key: a4c08d7b61
+key:
 lang: r
 xp: 50
 skills: 1
@@ -128,6 +128,7 @@ In the data presented in that last video, we saw the results of conditional logi
 - Correct. If the coefficient estimates are roughly the same, then that means people care about these two characteristics roughly the same. And that is exactly what we would expect a rational person to think. Now, you could actually justify (C) as being correct, since I didn't tell you what the new confidence intervals / standard errors were! This is something we have to worry about in any finite sample, but here I'm ignoring it just for simplicity.
 - If the confidence intervals were sufficiently large, then we would have to say that we can't tell either way. But here we are looking at the difference in coefficients while ignoring any confidence intervals, so try again.
  
+
 ---
 ## Let's Code: Income Inequality at FutureChew
 ```yaml
@@ -146,7 +147,7 @@ video_link: //player.vimeo.com/video/379871871
   
 ```yaml
 type: NormalExercise
-key: 95ac91e75f
+key:
 lang: r
 xp: 100
 skills: 1
@@ -240,7 +241,7 @@ success_msg("Good work!  Did you guess correctly which pair of variables had the
   
 ```yaml
 type: PureMultipleChoiceExercise
-key: 
+key:
 lang: r
 xp: 50
 skills: 1
@@ -267,7 +268,7 @@ If we are trying to use a model to estimate a causal effect, we need to have a c
   
 ```yaml
 type: NormalExercise
-key: 95ac91e75f
+key:
 lang: r
 xp: 100
 skills: 1
@@ -372,7 +373,7 @@ success_msg("Nice job! Once again, these log values are harder to interpret as r
   
 ```yaml
 type: NormalExercise
-key: 95ac91e75f
+key:
 lang: r
 xp: 100
 skills: 1
@@ -464,7 +465,7 @@ success_msg("Good work! The data overall shows a positive correlation of age, ex
   
 ```yaml
 type: NormalExercise
-key: ec90db4f0a
+key:
 lang: r
 xp: 100
 skills: 1
@@ -564,7 +565,7 @@ success_msg("Good work! Here, when we look just our dataset without a considerat
   
 ```yaml
 type: NormalExercise
-key: 9398c86a31
+key:
 lang: r
 xp: 100
 skills: 1
@@ -650,7 +651,7 @@ success_msg("Nice job! Now let's move on to analyzing our estimated average trea
   
 ```yaml
 type: NormalExercise
-key: 9398c86a31
+key:
 lang: r
 xp: 100
 skills: 1
