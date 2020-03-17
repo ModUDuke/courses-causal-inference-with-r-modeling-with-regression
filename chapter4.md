@@ -6,7 +6,7 @@ description: 'If you want to find out the causes for something, the best option 
 ## Using Modeling When Experiments Are Impossible
 ```yaml
 type: VideoExercise 
-key: 4c6f64e320
+key:
 lang: r
 xp: 50 
 skills: 1 
@@ -47,7 +47,7 @@ What is the best reason to use a model to find causality instead of a randomized
   
 ```yaml
 type: VideoExercise 
-key: cc7e8a6309
+key:
 lang: r
 xp: 50 
 skills: 1 
@@ -60,7 +60,7 @@ video_link: //player.vimeo.com/video/231746794
   
 ```yaml
 type: PureMultipleChoiceExercise
-key: 0a16d28c74
+key:
 lang: r
 xp: 50
 skills: 1
@@ -99,7 +99,7 @@ video_link: //player.vimeo.com/video/379871850
   
 ```yaml
 type: NormalExercise
-key: 326e16239a
+key:
 lang: r
 xp: 100
 skills: 1
@@ -213,7 +213,7 @@ success_msg("Good work! The base group (light drinkers) is represented by the in
   
 ```yaml
 type: NormalExercise
-key: 326e16239a
+key:
 lang: r
 xp: 100
 skills: 1
@@ -420,7 +420,7 @@ success_msg("Nice work! This dataset has a lot more variables and participants t
   
 ```yaml
 type: PureMultipleChoiceExercise
-key: 4dfa681543
+key:
 lang: r
 xp: 50
 skills: 1
@@ -449,7 +449,7 @@ The results of the previous exercise were not as clear as we were hoping: instea
   
 ```yaml
 type: NormalExercise
-key: 326e16239a
+key:
 lang: r
 xp: 100
 skills: 1
