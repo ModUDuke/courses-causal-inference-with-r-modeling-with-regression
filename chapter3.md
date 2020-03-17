@@ -1,6 +1,6 @@
 ---
 title: 'A Detour Into Prediction Models'
-description: 'Predictions about the future are not causal inference, but they are a big part of data science. We''ll practice one particular example in this chapter.' 
+description: 'Predictions about the future are not causal inference, but they are a big part of data science. We will practice one particular example in this chapter.' 
 --- 
 
 
@@ -20,7 +20,7 @@ video_link: //player.vimeo.com/video/379871855
   
 ```yaml
 type: NormalExercise
-key: f723ff2d39
+key:
 lang: r
 xp: 100
 skills: 1
@@ -126,7 +126,7 @@ success_msg("Good work! You can see the wide spread of purchase prices for the p
   
 ```yaml
 type: NormalExercise
-key: 8aa7765019
+key:
 lang: r
 xp: 100
 skills: 1
@@ -253,7 +253,7 @@ success_msg("Good work! Linear probability models are often the easiest to inter
   
 ```yaml
 type: NormalExercise
-key: cbe1960334
+key:
 lang: r
 xp: 100
 skills: 1
@@ -355,11 +355,6 @@ Data Dictionary:
 # 8) So what's the expected probability they will buy it in a pop-up store at the mall? 
   
       probability.popup.if.value.125<-
-      
-  
-  
-  
-  
   
   
 ```
@@ -398,7 +393,7 @@ success_msg("Good work! Now we see that the predicted probabilities fall within 
   
 ```yaml
 type: NormalExercise
-key: ed84d2c77d
+key:
 lang: r
 xp: 100
 skills: 1
