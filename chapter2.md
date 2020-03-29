@@ -6,7 +6,7 @@ description: 'In this chapter we'll look at the problems of confounders when usi
 ## Confounders in Discrete Choice Analysis
 ```yaml
 type: VideoExercise 
-key:
+key: 3019f22cf2
 lang: r
 xp: 50 
 skills: 1 
@@ -20,7 +20,7 @@ video_link: //player.vimeo.com/video/231746457
   
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: 4019f22cf2
 lang: r
 xp: 50
 skills: 1
@@ -45,7 +45,7 @@ Someone doing a Big Data analysis tells you the following. "I included over 1,00
 ## How Do People Choose Healthcare Plans?
 ```yaml
 type: VideoExercise 
-key:
+key: 5019f22cf2
 lang: r
 xp: 50 
 skills: 1 
@@ -59,7 +59,7 @@ video_link: //player.vimeo.com/video/231746698
   
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: 6019f22cf2
 lang: r
 xp: 50
 skills: 1
@@ -95,7 +95,7 @@ C) Whether having health insurance makes people healthier.
 ## Reading the Data to Find Preferences
 ```yaml
 type: VideoExercise 
-key:
+key: 7019f22cf2
 lang: r
 xp: 50 
 skills: 1 
@@ -108,7 +108,7 @@ video_link: //player.vimeo.com/video/231746940
 ## Reading the Coefficient Estimates 
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: 9019f22cf2
 lang: r
 xp: 50
 skills: 1
@@ -133,7 +133,7 @@ In the data presented in that last video, we saw the results of conditional logi
 ## Let's Code: Income Inequality at FutureChew
 ```yaml
 type: VideoExercise 
-key:
+key: 8019f22cf2
 lang: r
 xp: 50 
 skills: 1 
@@ -147,7 +147,7 @@ video_link: //player.vimeo.com/video/379871871
   
 ```yaml
 type: NormalExercise
-key:
+key: 3219f22cf2
 lang: r
 xp: 100
 skills: 1
@@ -241,7 +241,7 @@ success_msg("Good work!  Did you guess correctly which pair of variables had the
   
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: 4219f22cf2
 lang: r
 xp: 50
 skills: 1
@@ -268,7 +268,7 @@ If we are trying to use a model to estimate a causal effect, we need to have a c
   
 ```yaml
 type: NormalExercise
-key:
+key: 5219f22cf2
 lang: r
 xp: 100
 skills: 1
@@ -373,7 +373,7 @@ success_msg("Nice job! Once again, these log values are harder to interpret as r
   
 ```yaml
 type: NormalExercise
-key:
+key: 6219f22cf2
 lang: r
 xp: 100
 skills: 1
@@ -465,7 +465,7 @@ success_msg("Good work! The data overall shows a positive correlation of age, ex
   
 ```yaml
 type: NormalExercise
-key:
+key: 7219f22cf2
 lang: r
 xp: 100
 skills: 1
@@ -565,7 +565,7 @@ success_msg("Good work! Here, when we look just our dataset without a considerat
   
 ```yaml
 type: NormalExercise
-key:
+key: 8219f22cf2
 lang: r
 xp: 100
 skills: 1
@@ -651,7 +651,7 @@ success_msg("Nice job! Now let's move on to analyzing our estimated average trea
   
 ```yaml
 type: NormalExercise
-key:
+key: 9219f22cf2
 lang: r
 xp: 100
 skills: 1
