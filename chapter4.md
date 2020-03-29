@@ -6,7 +6,7 @@ description: 'If you want to find out the causes for something, the best option 
 ## Using Modeling When Experiments Are Impossible
 ```yaml
 type: VideoExercise 
-key:
+key: 6a0ad3ba11
 lang: r
 xp: 50 
 skills: 1 
@@ -19,7 +19,7 @@ video_link: //player.vimeo.com/video/231747210
   
 ```yaml
 type: PureMultipleChoiceExercise
-key: 
+key: 6a0ad3ba12
 lang: r
 xp: 50
 skills: 1
@@ -47,7 +47,7 @@ What is the best reason to use a model to find causality instead of a randomized
   
 ```yaml
 type: VideoExercise 
-key:
+key: 6a0ad3ba13
 lang: r
 xp: 50 
 skills: 1 
@@ -60,7 +60,7 @@ video_link: //player.vimeo.com/video/231746794
   
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: 6a0ad3ba14
 lang: r
 xp: 50
 skills: 1
@@ -85,7 +85,7 @@ True or false: The 2009 government stimulus worked and helped end the Great Rece
 ## Let's Code: Red Wine - The Secret to Living Longer?
 ```yaml
 type: VideoExercise 
-key:
+key: 6a0ad3ba15
 lang: r
 xp: 50 
 skills: 1 
@@ -99,7 +99,7 @@ video_link: //player.vimeo.com/video/379871850
   
 ```yaml
 type: NormalExercise
-key:
+key: 6a0ad3ba16
 lang: r
 xp: 100
 skills: 1
@@ -213,7 +213,7 @@ success_msg("Good work! The base group (light drinkers) is represented by the in
   
 ```yaml
 type: NormalExercise
-key:
+key: 6a0ad3ba17
 lang: r
 xp: 100
 skills: 1
@@ -420,7 +420,7 @@ success_msg("Nice work! This dataset has a lot more variables and participants t
   
 ```yaml
 type: PureMultipleChoiceExercise
-key:
+key: 6a0ad3ba18
 lang: r
 xp: 50
 skills: 1
@@ -449,7 +449,7 @@ The results of the previous exercise were not as clear as we were hoping: instea
   
 ```yaml
 type: NormalExercise
-key:
+key: 6a0ad3ba19
 lang: r
 xp: 100
 skills: 1
