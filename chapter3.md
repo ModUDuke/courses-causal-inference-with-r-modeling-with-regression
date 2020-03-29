@@ -7,7 +7,7 @@ description: 'Predictions about the future are not causal inference, but they ar
 ## Let's Code: Making Money for Space Travel
 ```yaml
 type: VideoExercise 
-key:
+key: bfcf99d7c1
 lang: r
 xp: 50 
 skills:1  
@@ -20,7 +20,7 @@ video_link: //player.vimeo.com/video/379871855
   
 ```yaml
 type: NormalExercise
-key:
+key: bfcf99d7c2
 lang: r
 xp: 100
 skills: 1
@@ -126,7 +126,7 @@ success_msg("Good work! You can see the wide spread of purchase prices for the p
   
 ```yaml
 type: NormalExercise
-key:
+key: bfcf99d7c3
 lang: r
 xp: 100
 skills: 1
@@ -253,7 +253,7 @@ success_msg("Good work! Linear probability models are often the easiest to inter
   
 ```yaml
 type: NormalExercise
-key:
+key: bfcf99d7c4
 lang: r
 xp: 100
 skills: 1
@@ -393,7 +393,7 @@ success_msg("Good work! Now we see that the predicted probabilities fall within 
   
 ```yaml
 type: NormalExercise
-key:
+key: bfcf99d7c5
 lang: r
 xp: 100
 skills: 1
@@ -519,7 +519,7 @@ success_msg("Good work! This probit is very, very close to our logit model, and 
   
 ```yaml
 type: NormalExercise
-key: 
+key: bfcf99d1c6
 lang: r
 xp: 100
 skills: 1
@@ -602,7 +602,7 @@ success_msg("Great job! The probit model has a very slightly higher AIC value, w
   
 ```yaml
 type: PureMultipleChoiceExercise
-key: 
+key: bfcf19d4c6
 lang: r
 xp: 50
 skills: 1
@@ -670,7 +670,7 @@ ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2))
   
 ```yaml
 type: PureMultipleChoiceExercise
-key: 
+key: bfcf59d7t6
 lang: r
 xp: 50
 skills: 1
