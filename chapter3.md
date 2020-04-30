@@ -223,7 +223,6 @@ Data Dictionary:
        
 ```
   
-## NOT SURE IF SOLUTIONS WORK FOR 3 AND 4
     
 `@solution`
 ```{r}
@@ -358,8 +357,7 @@ Data Dictionary:
   
   
 ```
-  
-## NOT SURE IF SOLUTIONS 2 AND 3 WORK
+
   
 `@solution`
 ```{r}
