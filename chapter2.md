@@ -1,6 +1,6 @@
 ---
 title: 'Confounders in Modeling'
-description: 'In this chapter we'll look at the problems of confounders when using models for causal inference.'
+description: 'In this chapter we will look at the problems of confounders when using models for causal inference.'
 --- 
 
 ## Confounders in Discrete Choice Analysis
